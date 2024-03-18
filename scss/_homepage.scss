@@ -273,4 +273,28 @@
 			}
 		}
 	}
+
+	.pre-register-section {
+		background-color: $primary-color;
+		text-align: center;
+		padding: 5rem 0;
+		color: $white-color;
+
+		.head {
+			h4 {
+				margin: 2rem 0 3rem 0;
+			}
+		}
+
+		.btn-primary {
+			background-color: lighten($primary-color, 10%);
+			margin-top: 3rem;
+		}
+
+		p {
+			opacity: $opacity;
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
 }
