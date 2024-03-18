@@ -1,0 +1,42 @@
+a {
+	text-decoration: none;
+	color: $black-color;
+}
+
+img {
+	object-fit: cover;
+}
+
+.container {
+	width: 90%;
+	max-width: 1224px;
+	margin: auto;
+}
+
+@mixin transition() {
+	transition: all ease-in-out 0.5s;
+}
+
+h1 {
+	font-size: 6rem;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
+
+h6 {
+	font-size: 0.8rem;
+}

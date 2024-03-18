@@ -1,0 +1,59 @@
+.homepage {
+	.showcase {
+		background-image: url("../public/showcase.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 80vh;
+		height: 80vh;
+
+		.container {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+			// background-color: red;
+			height: 100%;
+
+			.intro-head {
+				color: $white-color;
+				display: flex;
+				align-items: flex-start;
+				justify-content: center;
+				flex-direction: column;
+				flex: 2;
+				// background-color: darkorange;
+				padding: 3rem 0;
+				// padding-top: 3rem;
+				// text-align: center;
+
+				h4 {
+					text-transform: uppercase;
+					opacity: 0.7;
+				}
+
+				.inn {
+					// background-color: khaki;
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					text-transform: uppercase;
+
+					span {
+						background-color: $primary-color;
+						padding: 1rem;
+						border-radius: 100%;
+						font-size: 2.5rem;
+					}
+				}
+
+				.intro {
+					font-size: 1rem;
+				}
+			}
+
+			.countdown-section {
+				flex: 1;
+			}
+		}
+	}
+}
