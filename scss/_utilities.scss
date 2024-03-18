@@ -40,3 +40,28 @@ h5 {
 h6 {
 	font-size: 0.8rem;
 }
+
+.btn {
+	outline: none;
+	font-size: 0.9rem;
+	display: inline-block;
+	border: none;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	font-family: "__Plus_Jakarta_Sans_2df864",
+		"__Plus_Jakarta_Sans_Fallback_2df864";
+	border-radius: $radius;
+	@include transition();
+
+	&-primary {
+		background-color: $primary-color;
+		color: $white-color;
+
+		&:hover {
+			background-color: darken($primary-color, 10%);
+		}
+	}
+}

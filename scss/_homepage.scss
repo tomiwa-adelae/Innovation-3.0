@@ -13,6 +13,7 @@
 			justify-content: space-between;
 			// background-color: red;
 			height: 100%;
+			padding-bottom: 3rem;
 
 			.intro-head {
 				color: $white-color;
@@ -22,7 +23,7 @@
 				flex-direction: column;
 				flex: 2;
 				// background-color: darkorange;
-				padding: 3rem 0;
+				// padding: 3rem 0;
 				// padding-top: 3rem;
 				// text-align: center;
 
@@ -53,6 +54,67 @@
 
 			.countdown-section {
 				flex: 1;
+				// background-color: darkgoldenrod;
+				color: $white-color;
+				text-align: center;
+
+				.countdown {
+					display: grid;
+					grid-template-columns: repeat(4, 1fr);
+					margin-bottom: 2rem;
+					div {
+						// background-color: brown;
+						small {
+							font-weight: bold;
+							text-transform: uppercase;
+						}
+					}
+
+					.box {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+
+						// background-color: darkorchid;
+						h4 {
+							margin-left: 1rem;
+						}
+						// flex-direction: column;
+					}
+				}
+			}
+		}
+	}
+	.why-innovation {
+		h4 {
+			text-align: center;
+			color: $primary-color;
+		}
+
+		.boxes {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+
+			.dream {
+				background-image: url("../public/dream.jpg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				min-height: 50vh;
+				height: 50vh;
+				border-radius: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				flex-direction: column;
+				padding: 0 2rem;
+
+				color: $white-color;
+
+				h4 {
+					color: $white-color;
+				}
 			}
 		}
 	}
