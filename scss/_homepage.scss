@@ -194,21 +194,81 @@
 
 	.excerpt-section {
 		padding: 5rem 0;
+		background-image: linear-gradient(
+			to right,
+			$light-blue-color,
+			$light-color,
+			$light-blue-color
+		);
 		.head {
 			text-align: center;
 			color: $primary-color;
+			margin-bottom: 3rem;
 		}
 
 		.excerpts {
-			display: flex;
-			align-items: center;
-			justify-content: center;
+			// display: flex;
+			// align-items: center;
+			// justify-content: center;
+			// flex-direction: column;
 
 			.excerpt {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				// background-color: #bf2e8e;
+				// margin: 4rem 0;
+				// color: $white-color;
+
+				.details {
+					width: 60%;
+
+					h5 {
+						margin: 2rem 0;
+					}
+					svg {
+						font-size: 6rem;
+						color: $primary-color;
+					}
+
+					div {
+						display: flex;
+						align-items: flex-start;
+						justify-content: center;
+						flex-direction: column;
+						.name,
+						.title {
+							color: $white-color;
+							padding: 1rem 2rem;
+							margin: 0.2rem 0;
+							// border-radius: $radius;
+							background-color: $primary-color;
+							// width: 100%;
+							display: inline-block;
+						}
+
+						.title {
+							background-color: darken($primary-color, 10%);
+						}
+					}
+				}
+
 				img {
-					width: 300px;
-					height: 300px;
+					width: 400px;
+					height: 400px;
 					border-radius: 100%;
+				}
+			}
+			.excerpt:last-child {
+				// background-color: red;
+				flex-direction: row-reverse;
+				text-align: right;
+				margin-top: 5rem;
+
+				.details {
+					div {
+						align-items: flex-end;
+					}
 				}
 			}
 		}

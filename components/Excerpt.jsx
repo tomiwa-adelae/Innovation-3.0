@@ -2,55 +2,58 @@ import Image from "next/image";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
 
 const Excerpt = () => {
+	const excerpt = [
+		{
+			name: "Elizabeth Samuel",
+			imagePath: "/elizabeth-samuel.jpg",
+			excerpt: "Skills without character will lead to depression",
+			title: "Award winning Book Editor and Writer",
+			quoteDirection: "left",
+		},
+		{
+			name: "Emmanuel Agida",
+			imagePath: "/emmanuel-agida.jpg",
+			excerpt:
+				"No matter your age, you have the capacity to be what God wants you to be. You can fulfill your potential no matter your age.",
+			title: "ECOWAS Youth Ambassador",
+			quoteDirection: "right",
+		},
+	];
+
 	return (
 		<div className="excerpt-section">
 			<div className="container">
 				<div className="head">
 					<h4>Excerpt from Innovation 2.0</h4>
 				</div>
+
 				<div className="excerpts">
-					<div className="excerpt">
-						<div className="details">
-							<FaQuoteLeft />
-							<h5>
-								Skills without character will lead to depression
-							</h5>
-							<div className="name">
-								<h5>Elizabeth Samuel</h5>
+					{excerpt.map((excerpt) => (
+						<div className="excerpt">
+							<div className="details">
+								{excerpt.quoteDirection === "right" ? (
+									<FaQuoteRight />
+								) : (
+									<FaQuoteLeft />
+								)}
+								<h5>{excerpt.excerpt}</h5>
+								<div>
+									<span className="name">
+										<h6>{excerpt.name}</h6>
+									</span>
+									<span className="title">
+										<h6>{excerpt.title}</h6>
+									</span>
+								</div>
 							</div>
-							<div className="award">
-								<h5>Award winning Book Editor and Writer</h5>
-							</div>
+							<Image
+								src={excerpt.imagePath}
+								alt={excerpt.name}
+								width={1000}
+								height={1000}
+							/>
 						</div>
-						<Image
-							src={"/elizabeth-samuel.jpg"}
-							alt="Elizabeth Samuel"
-							width={1000}
-							height={1000}
-						/>
-					</div>
-					<div className="excerpt">
-						<div className="details">
-							<FaQuoteRight />
-							<h5>
-								No matter your age, you have the capacity to be
-								what God wants you to be. You can fulfill your
-								potential no matter your age.
-							</h5>
-							<div className="name">
-								<h5>Emmanuel Agida</h5>
-							</div>
-							<div className="award">
-								<h5>ECOWAS Youth Ambassador</h5>
-							</div>
-						</div>
-						<Image
-							src={"/elizabeth-samuel.jpg"}
-							alt="Elizabeth Samuel"
-							width={1000}
-							height={1000}
-						/>
-					</div>
+					))}
 				</div>
 			</div>
 		</div>
