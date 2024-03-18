@@ -1,4 +1,6 @@
+import Excerpt from "@/components/Excerpt";
 import Showcase from "@/components/Showcase";
+import Speakers from "@/components/Speakers";
 import WhyInnovation from "@/components/WhyInnovation";
 
 export default function Home() {
@@ -8,6 +10,8 @@ export default function Home() {
 			<Showcase />
 			{/* Why Innovation 3.0 */}
 			<WhyInnovation />
+			<Speakers />
+			<Excerpt />
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit.
 				Voluptatibus, quia qui? Consectetur incidunt maiores reiciendis

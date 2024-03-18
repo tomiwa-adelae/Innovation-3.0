@@ -2,7 +2,9 @@ const WhyInnovation = () => {
 	return (
 		<div className="why-innovation">
 			<div className="container">
-				<h4>Why Innovation 3.0?</h4>
+				<div className="head">
+					<h4>Why Innovation 3.0?</h4>
+				</div>
 
 				<div className="boxes">
 					<div className="box dare">
