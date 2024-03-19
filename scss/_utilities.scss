@@ -51,8 +51,7 @@ h6 {
 	cursor: pointer;
 	padding: 1rem 2rem;
 	text-transform: uppercase;
-	// font-family: "__Plus_Jakarta_Sans_2df864",
-	// 	"__Plus_Jakarta_Sans_Fallback_2df864";
+	font-family: "__Montserrat_588e4d", "__Montserrat_Fallback_588e4d";
 	border-radius: $radius;
 	@include transition();
 
@@ -64,4 +63,57 @@ h6 {
 			background-color: darken($primary-color, 10%);
 		}
 	}
+
+	&-white-outline {
+		border: 2px solid $white-color;
+		border-radius: 100px;
+		background: transparent;
+		color: $white-color;
+
+		&:hover {
+			background-color: $white-color;
+			color: $black-color;
+		}
+	}
+}
+
+form {
+	div {
+		width: 100%;
+		margin: 0.5rem 0;
+		label {
+			// font-size: 0.8rem;
+			font-weight: bold;
+			color: $white-color;
+			opacity: $opacity;
+		}
+		input,
+		textarea {
+			font-family: "__Montserrat_588e4d", "__Montserrat_Fallback_588e4d";
+			border: none;
+			border-bottom: 2px solid $white-color;
+			background-color: transparent;
+			outline: none;
+			width: 100%;
+			padding: 0.1rem 0 0.3rem 0;
+			font-weight: bold;
+			font-size: 0.8rem;
+			color: $white-color;
+		}
+		input[type="number"]::-webkit-inner-spin-button,
+		input[type="number"]::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+		}
+
+		input[type="number"] {
+			-moz-appearance: textfield;
+		}
+	}
+}
+
+.line {
+	width: 100%;
+	padding: 1px 0;
+	background-color: $primary-color;
+	// margin: 5rem 0;
 }

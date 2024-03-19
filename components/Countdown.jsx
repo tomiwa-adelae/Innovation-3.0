@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 // import {useEffect, useState} from "react";
@@ -104,9 +105,9 @@ const Countdown = () => {
 					<div></div>
 				</div>
 			</div>
-			<div className="btn btn-primary">
+			<Link href="/pre-register" className="btn btn-primary">
 				Pre-register for Innovation 3.0
-			</div>
+			</Link>
 		</div>
 	);
 };

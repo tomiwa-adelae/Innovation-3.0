@@ -1,0 +1,72 @@
+.faqpage {
+	padding: 5rem 0;
+	background-image: linear-gradient(
+		to right,
+		$light-blue-color,
+		$light-color,
+		$light-blue-color
+	);
+	height: 100%;
+
+	.head {
+		text-align: center;
+		margin-bottom: 3rem;
+
+		span {
+			display: inline-block;
+			border: 2px solid lighten($primary-color, 10%);
+			border-radius: 100px;
+			font-size: 0.6rem;
+			background-color: transparent;
+			padding: 1rem 2rem;
+		}
+
+		h4 {
+			color: $primary-color;
+			strong {
+				display: block;
+				color: $primary-color;
+			}
+		}
+	}
+
+	/** Main Title **/
+	.faqs {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		// margin-top: 4rem;
+		color: $black-color;
+
+		.question {
+			position: relative;
+			background-color: lighten($black-color, 80%);
+			border-radius: $radius;
+			@include transition();
+		}
+
+		.title {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			cursor: pointer;
+			padding: 1rem;
+		}
+
+		.questions-btn {
+			border: none;
+			background: transparent;
+			font-size: 1rem;
+			color: #ffffff;
+		}
+
+		.answer {
+			display: none;
+		}
+
+		.show .answer {
+			display: inline-block;
+			padding: 0 1rem 1.5rem 1rem;
+		}
+	}
+}

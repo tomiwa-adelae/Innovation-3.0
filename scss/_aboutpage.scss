@@ -1,0 +1,95 @@
+.aboutpage {
+	padding: 1rem 0 5rem 0;
+	.intro {
+		font-size: 1rem;
+	}
+	.head {
+		border-bottom: 2px solid $primary-color;
+		margin-bottom: 3rem;
+		h1 {
+			background-image: linear-gradient(
+				to right,
+				$primary-color,
+				darken($primary-color, 20%)
+			);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+
+	.about-innovation,
+	.our-mission,
+	.our-vision,
+	.about-cornersone-foundation {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2rem;
+		margin: 5rem 0;
+
+		h4 {
+			background-image: linear-gradient(
+				to right,
+				$primary-color,
+				darken($primary-color, 20%)
+			);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			margin-bottom: 1rem;
+		}
+
+		img {
+			width: 100%;
+			height: 400px;
+		}
+	}
+
+	.cornerstone-foundation,
+	.meet-team {
+		.head {
+			border-top: 2px solid $primary-color;
+			margin-top: 3rem;
+			h3 {
+				padding: 2rem 0;
+				background-image: linear-gradient(
+					to right,
+					$primary-color,
+					darken($primary-color, 20%)
+				);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+
+		.teams {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+			grid-gap: 0.5rem;
+			.person {
+				position: relative;
+				min-height: 300px;
+				height: 300px;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+
+				.details {
+					position: absolute;
+					bottom: 0%;
+					left: 50%;
+					transform: translate(-50%, 0%);
+					text-align: center;
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+					flex-direction: column;
+					background-color: rgba($black-color, 0.2);
+					padding-bottom: 1rem;
+					color: $white-color;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}
