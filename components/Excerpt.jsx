@@ -28,8 +28,8 @@ const Excerpt = () => {
 				</div>
 
 				<div className="excerpts">
-					{excerpt.map((excerpt) => (
-						<div className="excerpt">
+					{excerpt.map((excerpt, index) => (
+						<div key={index} className="excerpt">
 							<div className="details">
 								{excerpt.quoteDirection === "right" ? (
 									<FaQuoteRight />

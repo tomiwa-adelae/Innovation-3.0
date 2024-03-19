@@ -3,9 +3,7 @@ const PreRegister = () => {
 		<div className="pre-register-section">
 			<div className="container">
 				<div className="head">
-					<span className="btn btn-light-blue-outline">
-						Unlock the Future
-					</span>
+					<span>Unlock the Future</span>
 					<h4>Pre-register for Innovation 3.0</h4>
 				</div>
 				<p>
