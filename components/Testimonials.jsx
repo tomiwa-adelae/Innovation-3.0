@@ -11,7 +11,7 @@ const Testimonials = () => {
 						<strong>See what others are saying.</strong>
 					</h4>
 				</div>
-				<TestimonialSlider />
+				<TestimonialSlider className="testimonial-sliders" />
 			</div>
 		</div>
 	);
