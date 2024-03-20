@@ -92,8 +92,9 @@
 		.head {
 			h4 {
 				text-align: center;
-				color: $primary-color;
+				// color: $primary-color;
 				margin-bottom: 3rem;
+				@include linearTextBackground();
 			}
 		}
 
@@ -142,7 +143,7 @@
 		}
 	}
 	.speakers-section {
-		background-color: $primary-color;
+		background-color: darken($primary-color, 10%);
 		// background-color: #103f5d;
 		color: $white-color;
 		padding: 5rem 0;
@@ -194,15 +195,11 @@
 
 	.excerpt-section {
 		padding: 5rem 0;
-		background-image: linear-gradient(
-			to right,
-			$light-blue-color,
-			$light-color,
-			$light-blue-color
-		);
+		@include linearLightBlueBackground();
+
 		.head {
 			text-align: center;
-			color: $primary-color;
+			@include linearTextBackground();
 			margin-bottom: 3rem;
 		}
 
@@ -327,7 +324,7 @@
 				margin: 2rem 0 2rem 0;
 				strong {
 					display: block;
-					color: $primary-color;
+					@include linearTextBackground();
 				}
 			}
 		}

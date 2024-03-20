@@ -58,9 +58,7 @@ header {
 				@include transition();
 
 				&:hover {
-					// background-color: $light-blue-color;
 					color: $primary-color;
-					border-color: $primary-color;
 				}
 			}
 		}

@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import FAQs from "./FAQs";
+import Link from "next/link";
 
 const page = () => {
 	return (
@@ -16,6 +17,18 @@ const page = () => {
 						</h4>
 					</div>
 					<FAQs />
+					<div className="still-have-questions">
+						<div>
+							<h5>Still have questions?</h5>
+							<small>
+								Can't find the answers you are looking for.
+								Please reach out to our friendly team.
+							</small>
+						</div>
+						<Link href="/contact" className="btn btn-white-outline">
+							Get in touch
+						</Link>
+					</div>
 				</div>
 			</div>
 			<Footer />

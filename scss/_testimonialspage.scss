@@ -1,11 +1,6 @@
 .testimonialspage {
 	padding: 5rem 0;
-	background-image: linear-gradient(
-		to right,
-		$light-blue-color,
-		$light-color,
-		$light-blue-color
-	);
+	@include linearLightBlueBackground();
 	height: 100%;
 
 	.head {
@@ -22,10 +17,9 @@
 		}
 
 		h4 {
-			color: $primary-color;
 			strong {
 				display: block;
-				color: $primary-color;
+				@include linearTextBackground();
 			}
 		}
 	}
@@ -80,7 +74,7 @@
 
 		.card--bg-dark {
 			background: $dark-color;
-			color: #fff;
+			color: $white-color;
 		}
 
 		.card:nth-of-type(1) {

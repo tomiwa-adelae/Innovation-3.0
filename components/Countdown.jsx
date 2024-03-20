@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 // import {useEffect, useState} from "react";
 
 const Countdown = () => {
-	const launchDate = new Date("May 10, 2024, 12:00:00").getTime();
+	const launchDate = new Date("May 10, 2024, 09:00:00").getTime();
 
 	const [days, setDays] = useState(0);
 	const [hours, setHours] = useState(0);

@@ -1,16 +1,10 @@
 .faqpage {
 	padding: 5rem 0;
-	background-image: linear-gradient(
-		to right,
-		$light-blue-color,
-		$light-color,
-		$light-blue-color
-	);
+	@include linearLightBlueBackground();
 	height: 100%;
 
 	.head {
 		text-align: center;
-		margin-bottom: 3rem;
 
 		span {
 			display: inline-block;
@@ -22,51 +16,70 @@
 		}
 
 		h4 {
-			color: $primary-color;
+			margin: 2rem 0 3rem 0;
+
 			strong {
 				display: block;
-				color: $primary-color;
+				@include linearTextBackground();
 			}
 		}
 	}
 
 	/** Main Title **/
 	.faqs {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-		// margin-top: 4rem;
+		// display: flex;
+		// flex-direction: column;
+		// gap: 1rem;
 		color: $black-color;
+		width: 95%;
+		margin: 0 auto;
 
 		.question {
-			position: relative;
-			background-color: lighten($black-color, 80%);
+			margin: 1rem 0;
+			background-color: $grey-color;
 			border-radius: $radius;
 			@include transition();
+
+			.title {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				cursor: pointer;
+				padding: 1.5rem;
+
+				svg {
+					font-size: 1.5rem;
+				}
+			}
+
+			.answer {
+				// display: inline-block;
+				padding: 0 1.5rem 1.5rem 1.5rem;
+			}
+
+			&:hover {
+				background-color: darken($grey-color, 10%);
+			}
 		}
 
-		.title {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			cursor: pointer;
-			padding: 1rem;
+		.question.dark {
+			background-color: darken($grey-color, 10%);
 		}
+	}
 
-		.questions-btn {
-			border: none;
-			background: transparent;
-			font-size: 1rem;
-			color: #ffffff;
-		}
+	.still-have-questions {
+		background-color: $primary-color;
+		color: $white-color;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1.5rem 2rem;
+		border-radius: $radius;
+		margin-top: 3rem;
 
-		.answer {
-			display: none;
-		}
-
-		.show .answer {
-			display: inline-block;
-			padding: 0 1rem 1.5rem 1rem;
+		h5 {
+			margin-bottom: 0.75rem;
+			font-size: 1.2rem;
 		}
 	}
 }

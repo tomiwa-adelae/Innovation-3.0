@@ -7,13 +7,7 @@
 		border-bottom: 2px solid $primary-color;
 		margin-bottom: 3rem;
 		h1 {
-			background-image: linear-gradient(
-				to right,
-				$primary-color,
-				darken($primary-color, 20%)
-			);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+			@include linearTextBackground();
 		}
 	}
 
@@ -27,19 +21,13 @@
 		margin: 5rem 0;
 
 		h4 {
-			background-image: linear-gradient(
-				to right,
-				$primary-color,
-				darken($primary-color, 20%)
-			);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+			@include linearTextBackground();
 			margin-bottom: 1rem;
 		}
 
 		img {
 			width: 100%;
-			height: 400px;
+			height: 100%;
 		}
 	}
 
@@ -50,13 +38,7 @@
 			margin-top: 3rem;
 			h3 {
 				padding: 2rem 0;
-				background-image: linear-gradient(
-					to right,
-					$primary-color,
-					darken($primary-color, 20%)
-				);
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
+				@include linearTextBackground();
 			}
 		}
 

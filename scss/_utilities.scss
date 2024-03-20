@@ -17,6 +17,25 @@ img {
 	transition: all ease-in-out 0.5s;
 }
 
+@mixin linearTextBackground() {
+	background-image: linear-gradient(
+		to right,
+		$primary-color,
+		darken($primary-color, 20%)
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin linearLightBlueBackground() {
+	background-image: linear-gradient(
+		to right,
+		$light-blue-color,
+		$light-color,
+		$light-blue-color
+	);
+}
+
 h1 {
 	font-size: 6rem;
 }

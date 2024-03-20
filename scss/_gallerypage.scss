@@ -1,11 +1,6 @@
 .gallerypage {
 	padding: 5rem 0;
-	background-image: linear-gradient(
-		to right,
-		$light-blue-color,
-		$light-color,
-		$light-blue-color
-	);
+	@include linearLightBlueBackground();
 	// min-height: 100vh;
 	height: 100%;
 
@@ -21,7 +16,7 @@
 		}
 
 		h4 {
-			color: $primary-color;
+			@include linearTextBackground();
 			margin: 2rem 0;
 		}
 	}
