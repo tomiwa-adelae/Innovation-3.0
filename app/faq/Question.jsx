@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
-import { IoLogoInstagram, IoLogoFacebook } from "react-icons/io5";
+import { GoPlus } from "react-icons/go";
+import { LuMinus } from "react-icons/lu";
 
 const Question = ({ question }) => {
 	const [showAnswer, setShowAnswer] = useState(false);
@@ -9,11 +10,7 @@ const Question = ({ question }) => {
 		<div className={showAnswer ? "question dark" : "question"}>
 			<div onClick={() => setShowAnswer(!showAnswer)} className="title">
 				<h5>{question.title}</h5>
-				{showAnswer ? (
-					<IoLogoInstagram className="instagram" />
-				) : (
-					<IoLogoFacebook className="facebook" />
-				)}
+				{showAnswer ? <LuMinus /> : <GoPlus className="facebook" />}
 			</div>
 			{showAnswer && (
 				<div className="answer">
