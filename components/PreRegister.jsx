@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const PreRegister = () => {
 	return (
 		<div className="pre-register-section">
@@ -18,9 +20,9 @@ const PreRegister = () => {
 					life and beyond. Join us at Innovation 3.0 and dare to
 					dream, dare to innovate, and dare to shape the future!
 				</p>
-				<div className="btn btn-primary">
+				<Link href="/pre-register" className="btn btn-primary">
 					Pre-register for Innovation 3.0
-				</div>
+				</Link>
 			</div>
 		</div>
 	);

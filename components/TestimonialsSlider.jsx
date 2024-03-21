@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useRef, useState } from "react";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -47,6 +46,9 @@ const TestimonialSlider = () => {
 		<Swiper
 			navigation={true}
 			autoplay
+			loop={true}
+			effect="flip"
+			grabCursor={true}
 			modules={[Navigation, Autoplay]}
 			scrollbar={{ draggable: true }}
 			className="mySwiper"

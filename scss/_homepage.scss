@@ -11,7 +11,6 @@
 			display: flex;
 			align-items: flex-end;
 			justify-content: space-between;
-			// background-color: red;
 			height: 100%;
 			padding-bottom: 3rem;
 
@@ -22,10 +21,6 @@
 				justify-content: center;
 				flex-direction: column;
 				flex: 2;
-				// background-color: darkorange;
-				// padding: 3rem 0;
-				// padding-top: 3rem;
-				// text-align: center;
 
 				h4 {
 					text-transform: uppercase;
@@ -33,7 +28,6 @@
 				}
 
 				.inn {
-					// background-color: khaki;
 					display: flex;
 					align-items: center;
 					justify-content: flex-start;
@@ -48,13 +42,12 @@
 				}
 
 				.intro {
-					font-size: 1rem;
+					width: 90%;
 				}
 			}
 
 			.countdown-section {
 				flex: 1;
-				// background-color: darkgoldenrod;
 				color: $white-color;
 				text-align: center;
 
@@ -63,7 +56,6 @@
 					grid-template-columns: repeat(4, 1fr);
 					margin-bottom: 2rem;
 					div {
-						// background-color: brown;
 						small {
 							font-weight: bold;
 							text-transform: uppercase;
@@ -75,11 +67,9 @@
 						align-items: center;
 						justify-content: center;
 
-						// background-color: darkorchid;
 						h4 {
 							margin-left: 1rem;
 						}
-						// flex-direction: column;
 					}
 				}
 			}
@@ -92,7 +82,7 @@
 		.head {
 			h4 {
 				text-align: center;
-				// color: $primary-color;
+				text-transform: uppercase;
 				margin-bottom: 3rem;
 				@include linearTextBackground();
 			}
@@ -106,6 +96,7 @@
 			.dream,
 			.dare,
 			.innovate {
+				flex: 1;
 				background-image: url("../public/dare.jpg");
 				background-position: center;
 				background-repeat: no-repeat;
@@ -144,13 +135,13 @@
 	}
 	.speakers-section {
 		background-color: darken($primary-color, 20%);
-		// background-color: #103f5d;
 		color: $white-color;
 		padding: 5rem 0;
 
 		.head {
 			text-align: center;
 			margin-bottom: 3rem;
+			text-transform: uppercase;
 		}
 
 		.speakers {
@@ -201,21 +192,14 @@
 			text-align: center;
 			@include linearTextBackground();
 			margin-bottom: 3rem;
+			text-transform: uppercase;
 		}
 
 		.excerpts {
-			// display: flex;
-			// align-items: center;
-			// justify-content: center;
-			// flex-direction: column;
-
 			.excerpt {
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
-				// background-color: #bf2e8e;
-				// margin: 4rem 0;
-				// color: $white-color;
 
 				.details {
 					width: 60%;
@@ -238,9 +222,7 @@
 							color: $white-color;
 							padding: 1rem 2rem;
 							margin: 0.2rem 0;
-							// border-radius: $radius;
 							background-color: $primary-color;
-							// width: 100%;
 							display: inline-block;
 						}
 
@@ -251,13 +233,12 @@
 				}
 
 				img {
-					width: 400px;
-					height: 400px;
+					width: 300px;
+					height: 300px;
 					border-radius: 100%;
 				}
 			}
 			.excerpt:last-child {
-				// background-color: red;
 				flex-direction: row-reverse;
 				text-align: right;
 				margin-top: 5rem;
@@ -288,6 +269,7 @@
 			}
 			h4 {
 				margin: 2rem 0 2rem 0;
+				text-transform: uppercase;
 			}
 		}
 
@@ -313,20 +295,43 @@
 
 		.head {
 			text-align: center;
-			span {
-				border: 2px solid lighten($primary-color, 10%);
-				border-radius: 100px;
-				font-size: 0.6rem;
-				background-color: transparent;
-				padding: 1rem 2rem;
-			}
+		}
+
+		.swiper {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			text-align: center;
+
+			padding: 3rem;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			flex-direction: column;
+
 			h4 {
-				margin: 2rem 0 2rem 0;
-				strong {
-					display: block;
-					@include linearTextBackground();
-				}
+				margin-top: 1rem;
+				color: $primary-color;
 			}
+
+			p {
+				margin: 0.5rem 0;
+				font-weight: bold;
+			}
+
+			.intro {
+				font-weight: normal;
+			}
+		}
+
+		.swiper-slide img {
+			width: 300px;
+			height: 300px;
+			border-radius: 100%;
 		}
 	}
 }

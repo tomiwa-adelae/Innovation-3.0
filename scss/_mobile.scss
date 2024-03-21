@@ -1,0 +1,451 @@
+@media (max-width: 1080px) {
+	h1 {
+		font-size: 5rem;
+	}
+
+	h2 {
+		font-size: 3.5rem;
+	}
+
+	h3 {
+		font-size: 2.5rem;
+	}
+
+	h4 {
+		font-size: 1.5rem;
+	}
+
+	h5 {
+		font-size: 0.8rem;
+	}
+
+	h6 {
+		font-size: 0.7rem;
+	}
+
+	.intro {
+		font-size: 0.9rem;
+	}
+
+	.homepage {
+		.why-innovation {
+			.boxes {
+				grid-gap: 1rem;
+			}
+		}
+		.speakers-section {
+			.speakers {
+				grid-gap: 1rem;
+			}
+		}
+	}
+
+	.aboutpage {
+		.about-innovation,
+		.our-mission,
+		.our-vision,
+		.about-cornersone-foundation {
+			grid-gap: 1rem;
+		}
+	}
+
+	.testimonialspage {
+		padding: 5rem 0;
+		@include linearLightBlueBackground();
+		height: 100%;
+
+		.head {
+			text-align: center;
+			margin-bottom: 3rem;
+
+			span {
+				display: inline-block;
+				border: 2px solid lighten($primary-color, 10%);
+				border-radius: 100px;
+				font-size: 0.6rem;
+				background-color: transparent;
+				padding: 1rem 2rem;
+			}
+
+			h4 {
+				strong {
+					display: block;
+					@include linearTextBackground();
+				}
+			}
+		}
+
+		.testimonials {
+			gap: 1rem;
+
+			.card {
+				padding: 1.5rem;
+			}
+
+			.card__img {
+				margin-right: 0.5rem;
+			}
+
+			.card--bg-primary {
+				background-position: top 10px right 60px;
+			}
+		}
+	}
+}
+
+@media (max-width: 880px) {
+	h1 {
+		font-size: 4rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	h4 {
+		font-size: 1.5rem;
+	}
+
+	.intro {
+		font-size: 0.8rem;
+	}
+
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100px;
+		width: 100%;
+		background-color: $white-color;
+		z-index: 20;
+
+		.container {
+			.links {
+				align-items: flex-start;
+				justify-content: flex-start;
+				flex-direction: column;
+				position: fixed;
+				top: 100px;
+				right: -100%;
+				width: 50%;
+				height: 100vh;
+				background-color: $primary-color;
+				z-index: 10;
+				padding-top: 2rem;
+				box-shadow: rgba($dark-color, 0.5) 0px 3px 8px;
+
+				a {
+					justify-content: flex-start;
+					border-bottom: 1px solid $white-color;
+					color: $white-color;
+					width: 90%;
+					padding: 1rem;
+					margin-left: 0rem;
+					margin: 0rem auto;
+
+					&:hover {
+						border-bottom: 1px solid $light-blue-color;
+						color: $white-color;
+						opacity: $opacity;
+					}
+				}
+
+				&.open {
+					right: 0;
+				}
+			}
+
+			.burger {
+				display: block;
+			}
+		}
+	}
+
+	.homepage,
+	.aboutpage,
+	.contactpage,
+	.faqpage,
+	.gallerypage,
+	.pre-registerpage,
+	.testimonialspage {
+		margin-top: 100px;
+	}
+
+	.homepage {
+		.showcase {
+			.container {
+				align-items: flex-start;
+				justify-content: flex-end;
+				flex-direction: column;
+				padding-bottom: 1.5rem;
+
+				.intro-head {
+					flex: 0;
+					margin-bottom: 2rem;
+
+					.inn {
+						span {
+							padding: 0.75rem;
+							font-size: 2rem;
+						}
+					}
+
+					.intro {
+						width: 100%;
+					}
+				}
+
+				.countdown-section {
+					flex: 0;
+
+					.countdown {
+						margin-bottom: 1rem;
+					}
+				}
+			}
+		}
+
+		.why-innovation {
+			.boxes {
+				grid-template-columns: repeat(2, 1fr);
+
+				.dream,
+				.dare,
+				.innovate {
+					margin: 0 auto;
+				}
+			}
+		}
+		.speakers-section {
+			.speakers {
+				grid-gap: 1rem;
+				.speaker {
+					img {
+						width: 200px;
+						height: 200px;
+					}
+
+					.socials {
+						svg {
+							font-size: 1.5rem;
+						}
+					}
+				}
+			}
+		}
+
+		.excerpt-section {
+			.excerpts {
+				.excerpt {
+					.details {
+						svg {
+							font-size: 5rem;
+						}
+					}
+
+					img {
+						width: 220px;
+						height: 220px;
+					}
+				}
+			}
+		}
+
+		.pre-register-section {
+			p {
+				width: 100%;
+			}
+		}
+
+		.testimonials-section {
+			.swiper-slide img {
+				width: 220px;
+				height: 220px;
+			}
+		}
+	}
+
+	.contactpage {
+		.container {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	.pre-registerpage {
+		.container {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}
+
+@media (max-width: 780px) {
+	.intro {
+		font-size: 0.8rem;
+	}
+
+	.container {
+		width: 95%;
+	}
+
+	.homepage {
+		.why-innovation {
+			.boxes {
+				grid-template-columns: 1fr;
+			}
+		}
+		.speakers-section {
+			.speakers {
+				grid-template-columns: 1fr;
+				.speaker {
+					margin: 1rem 0;
+				}
+			}
+		}
+
+		.excerpt-section {
+			.excerpts {
+				.excerpt {
+					flex-direction: column-reverse;
+					.details {
+						width: 100%;
+					}
+				}
+				.excerpt:last-child {
+					flex-direction: column-reverse;
+				}
+			}
+		}
+	}
+
+	.aboutpage {
+		.about-innovation,
+		.our-mission,
+		.our-vision,
+		.about-cornersone-foundation {
+			grid-template-columns: 1fr;
+			grid-gap: 1rem;
+			margin: 3rem 0;
+		}
+	}
+
+	.contactpage {
+		padding-top: 3rem;
+		.container {
+			grid-template-columns: 1fr;
+			height: 100%;
+			align-items: center;
+		}
+	}
+
+	.pre-registerpage {
+		padding-top: 3rem;
+		.container {
+			height: 100%;
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.testimonialspage {
+		.testimonials {
+			grid-template-columns: 1fr;
+
+			.card:nth-of-type(1) {
+				grid-column: 1;
+			}
+
+			.card:nth-of-type(4) {
+				grid-column: 1;
+				grid-row: 4;
+			}
+
+			.card:nth-of-type(5) {
+				grid-column: 1;
+				grid-row: 5;
+			}
+		}
+	}
+
+	.faqpage {
+		.still-have-questions {
+			align-items: flex-start;
+			flex-direction: column;
+
+			h5 {
+				font-size: 0.9rem;
+			}
+
+			.btn {
+				margin-top: 2rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 680px) {
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	h4 {
+		font-size: 1.2rem;
+	}
+
+	h5 {
+		font-size: 0.6rem;
+	}
+
+	h6 {
+		font-size: 0.6rem;
+	}
+
+	.btn {
+		font-size: 0.7rem;
+		padding: 0.9rem 1.5rem;
+	}
+
+	footer {
+		flex-direction: column;
+
+		.socials {
+			margin: 1rem 0;
+		}
+	}
+
+	header {
+		.container {
+			.links {
+				width: 100%;
+			}
+		}
+	}
+
+	.homepage {
+		.showcase {
+			.container {
+				.intro-head {
+					margin-bottom: 1rem;
+
+					.inn {
+						margin: 0.5rem 0;
+						span {
+							padding: 0.5rem;
+							font-size: 1.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

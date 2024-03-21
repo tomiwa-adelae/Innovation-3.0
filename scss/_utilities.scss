@@ -36,6 +36,26 @@ img {
 	);
 }
 
+.break {
+	span {
+		display: inline-block;
+		border: 2px solid lighten($primary-color, 10%);
+		border-radius: 100px;
+		font-size: 0.6rem;
+		background-color: transparent;
+		padding: 1rem 2rem;
+	}
+
+	h4 {
+		margin-top: 1rem;
+		text-transform: uppercase;
+		strong {
+			display: block;
+			@include linearTextBackground();
+		}
+	}
+}
+
 h1 {
 	font-size: 6rem;
 }
@@ -106,7 +126,6 @@ form {
 		width: 100%;
 		margin: 0.5rem 0;
 		label {
-			// font-size: 0.8rem;
 			font-weight: bold;
 			color: $white-color;
 			opacity: $opacity;
@@ -139,7 +158,6 @@ form {
 	width: 100%;
 	padding: 1px 0;
 	background-color: $primary-color;
-	// margin: 5rem 0;
 }
 
 .loader {

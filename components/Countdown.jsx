@@ -3,8 +3,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-// import {useEffect, useState} from "react";
-
 const Countdown = () => {
 	const launchDate = new Date("May 10, 2024, 09:00:00").getTime();
 

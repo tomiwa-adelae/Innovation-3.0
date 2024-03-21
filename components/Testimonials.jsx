@@ -4,7 +4,7 @@ const Testimonials = () => {
 	return (
 		<div className="testimonials-section">
 			<div className="container">
-				<div className="head">
+				<div className="head break">
 					<span>Testimonials</span>
 					<h4>
 						<strong>Don't take our words for it.</strong>

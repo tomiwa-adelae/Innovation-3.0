@@ -6,22 +6,6 @@
 	.head {
 		text-align: center;
 		margin-bottom: 3rem;
-
-		span {
-			display: inline-block;
-			border: 2px solid lighten($primary-color, 10%);
-			border-radius: 100px;
-			font-size: 0.6rem;
-			background-color: transparent;
-			padding: 1rem 2rem;
-		}
-
-		h4 {
-			strong {
-				display: block;
-				@include linearTextBackground();
-			}
-		}
 	}
 
 	.testimonials {

@@ -1,5 +1,4 @@
 import Excerpt from "@/components/Excerpt";
-import Footer from "@/components/Footer";
 
 import PreRegister from "@/components/PreRegister";
 import Showcase from "@/components/Showcase";
@@ -16,7 +15,6 @@ export default function Home() {
 			<Excerpt />
 			<PreRegister />
 			<Testimonials />
-			<Footer />
 		</div>
 	);
 }

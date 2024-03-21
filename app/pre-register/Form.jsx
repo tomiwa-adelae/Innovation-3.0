@@ -32,7 +32,6 @@ const Form = () => {
 				config
 			);
 
-			// router.push("/success");
 			setLoading(false);
 			setSuccess(res.data.success);
 			setError(null);

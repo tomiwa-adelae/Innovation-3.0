@@ -1,24 +1,10 @@
 .gallerypage {
 	padding: 5rem 0;
 	@include linearLightBlueBackground();
-	// min-height: 100vh;
 	height: 100%;
 
 	.head {
 		text-align: center;
-		span {
-			display: inline-block;
-			border: 2px solid lighten($primary-color, 10%);
-			border-radius: 100px;
-			font-size: 0.6rem;
-			background-color: transparent;
-			padding: 1rem 2rem;
-		}
-
-		h4 {
-			@include linearTextBackground();
-			margin: 2rem 0;
-		}
 	}
 
 	.our-team,
@@ -32,6 +18,21 @@
 			font-size: 0.7rem;
 			background-color: transparent;
 			padding: 1rem 2rem;
+			margin: 1rem 0 3rem 0;
+		}
+
+		.swiper {
+			width: 100%;
+			height: 100%;
+			@include linearLightBlueBackground();
+			height: 400px;
+		}
+
+		.swiper-slide img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 }

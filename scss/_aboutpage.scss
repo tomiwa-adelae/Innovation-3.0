@@ -1,13 +1,12 @@
 .aboutpage {
 	padding: 1rem 0 5rem 0;
-	.intro {
-		font-size: 1rem;
-	}
+
 	.head {
 		border-bottom: 2px solid $primary-color;
 		margin-bottom: 3rem;
 		h1 {
 			@include linearTextBackground();
+			text-transform: uppercase;
 		}
 	}
 
@@ -22,6 +21,7 @@
 
 		h4 {
 			@include linearTextBackground();
+			text-transform: uppercase;
 			margin-bottom: 1rem;
 		}
 
@@ -38,6 +38,8 @@
 			margin-top: 3rem;
 			h3 {
 				padding: 2rem 0;
+				text-transform: uppercase;
+
 				@include linearTextBackground();
 			}
 		}
