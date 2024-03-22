@@ -83,17 +83,44 @@ header {
 	}
 }
 
+.notfoundpage,
+.cornerstone-foundation {
+	min-height: calc(100vh - 100px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	@include linearLightBlueBackground();
+
+	h1,
+	h2,
+	p,
+	h4 {
+		@include linearTextBackground();
+	}
+
+	h4 {
+		margin-top: 2rem;
+	}
+
+	p {
+		font-weight: bold;
+	}
+}
+
 footer {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	box-shadow: rgba($primary-color, 0.35) 0px 1px 5px;
-	padding: 0 2rem;
 	margin: 0 auto;
 	font-weight: bold;
+	padding: 0 2rem;
+	background-color: $white-color;
 	img {
-		width: 100px;
-		height: 100px;
+		width: 50px;
+		height: 50px;
 	}
 
 	.socials {

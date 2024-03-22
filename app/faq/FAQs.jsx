@@ -7,11 +7,15 @@ const FAQs = () => {
 			answer: "Innovation is the best thing that happened to mankind.",
 		},
 		{
-			title: "Who is John Ogunjide?",
+			title: "Is Innovation 3.0 free?",
 			answer: "Innovation is the best thing that happened to mankind.",
 		},
 		{
-			title: "Who are the new speakers?",
+			title: "What do I need to bring along for Innovation 3.0?",
+			answer: "Innovation is the best thing that happened to mankind.",
+		},
+		{
+			title: "Can I prepare some questions to ask the speakers?",
 			answer: "Innovation is the best thing that happened to mankind.",
 		},
 		{

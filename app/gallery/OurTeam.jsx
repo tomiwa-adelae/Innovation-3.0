@@ -12,12 +12,10 @@ import { Navigation, Autoplay } from "swiper/modules";
 
 const OurTeam = () => {
 	const images = [
-		"/john-ogunjide.jpg",
-		"/inyene.jpg",
+		"/john-ogunjide-2.jpg",
 		"/elizabeth-samuel.jpg",
-		"/john-ogunjide.jpg",
-		"/john-ogunjide.jpg",
-		"/john-ogunjide.jpg",
+		"/8.jpg",
+		"/john-ogunjide-3.jpg",
 	];
 
 	return (

@@ -6,7 +6,8 @@ const Excerpt = () => {
 		{
 			name: "Elizabeth Samuel",
 			imagePath: "/elizabeth-samuel.jpg",
-			excerpt: "Skills without character will lead to depression",
+			excerpt:
+				"You are not the light of Ajayi Crowther University. You are not the light of Oyo town. You are not the light of Oyo State. You are the light of the world. Shine bright anywhere you find yourself.",
 			title: "Award winning Book Editor and Writer",
 			quoteDirection: "left",
 		},

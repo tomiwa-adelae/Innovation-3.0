@@ -12,12 +12,10 @@ import { Navigation, Autoplay } from "swiper/modules";
 const OurSpeaker = () => {
 	const images = [
 		"/elizabeth-samuel.jpg",
-		"/elizabeth-samuel.jpg",
-		"/elizabeth-samuel.jpg",
-		"/elizabeth-samuel.jpg",
-		"/elizabeth-samuel.jpg",
-		"/elizabeth-samuel.jpg",
-		"/elizabeth-samuel.jpg",
+		"/israel-alabi.jpg",
+		"/miracle-dominic.jpg",
+		"/3.jpg",
+		"/6.jpg",
 	];
 
 	return (
