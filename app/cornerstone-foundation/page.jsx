@@ -6,7 +6,7 @@ export const metadata = {
 
 const page = () => {
 	return (
-		<div className="cornerstone-foundation">
+		<div className="cornerstone-foundationpage">
 			<h2>CORNERSTONE FOUNDATION</h2>
 			<h4>COMING SOON...</h4>
 		</div>

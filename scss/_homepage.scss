@@ -305,13 +305,14 @@
 		.swiper-slide {
 			text-align: center;
 
-			padding: 3rem;
+			padding: 3rem 0;
 
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			text-align: center;
 			flex-direction: column;
+			width: 100%;
 
 			h4 {
 				margin-top: 1rem;
@@ -321,6 +322,7 @@
 			p {
 				margin: 0.5rem 0;
 				font-weight: bold;
+				width: 100%;
 			}
 
 			.intro {

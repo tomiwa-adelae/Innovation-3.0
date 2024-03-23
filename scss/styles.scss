@@ -84,13 +84,13 @@ header {
 }
 
 .notfoundpage,
-.cornerstone-foundation {
-	min-height: calc(100vh - 100px);
+.cornerstone-foundationpage {
+	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-
+	text-align: center;
 	@include linearLightBlueBackground();
 
 	h1,
@@ -118,6 +118,7 @@ footer {
 	font-weight: bold;
 	padding: 0 2rem;
 	background-color: $white-color;
+	text-align: center;
 	img {
 		width: 50px;
 		height: 50px;
