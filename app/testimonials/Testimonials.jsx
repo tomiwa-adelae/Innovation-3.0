@@ -3,11 +3,11 @@ import Image from "next/image";
 const Testimonials = () => {
 	return (
 		<div className="testimonials">
-			<div class="card card--bg-primary">
-				<div class="card__header">
+			<div className="card card--bg-primary">
+				<div className="card__header">
 					<Image
 						src={"/image-daniel.jpg"}
-						class="card__img"
+						className="card__img"
 						alt="Patrick Abrahms"
 						width={1000}
 						height={1000}
@@ -18,7 +18,7 @@ const Testimonials = () => {
 					</div>
 				</div>
 
-				<p class="card__quote">
+				<p className="card__quote">
 					"I was an EMT for many years before I joined the bootcamp.
 					I've been looking to make a transition and have heard some
 					people who had an amazing experience here. I signed up for
@@ -30,11 +30,11 @@ const Testimonials = () => {
 				</p>
 			</div>
 
-			<div class="card card--bg-light-blue">
-				<div class="card__header">
+			<div className="card card--bg-light-blue">
+				<div className="card__header">
 					<Image
 						src={"/image-jonathan.jpg"}
-						class="card__img"
+						className="card__img"
 						alt="Patrick Abrahms"
 						width={1000}
 						height={1000}
@@ -45,18 +45,18 @@ const Testimonials = () => {
 					</div>
 				</div>
 
-				<p class="card__quote">
+				<p className="card__quote">
 					"I started as a total newbie with virtually no coding
 					skills. I now work as a mobile engineer for a big company.
 					This was one of the best investments I've made in myself."
 				</p>
 			</div>
 
-			<div class="card">
-				<div class="card__header">
+			<div className="card">
+				<div className="card__header">
 					<Image
 						src={"/image-jeanette.jpg"}
-						class="card__img"
+						className="card__img"
 						alt="Patrick Abrahms"
 						width={1000}
 						height={1000}
@@ -67,18 +67,18 @@ const Testimonials = () => {
 					</div>
 				</div>
 
-				<p class="card__quote">
+				<p className="card__quote">
 					"Thank you for the wonderful experience! I now have a job I
 					really enjoy, and make a good living while doing something I
 					love."
 				</p>
 			</div>
 
-			<div class="card card--bg-dark">
-				<div class="card__header">
+			<div className="card card--bg-dark">
+				<div className="card__header">
 					<Image
 						src={"/image-patrick.jpg"}
-						class="card__img"
+						className="card__img"
 						alt="Patrick Abrahms"
 						width={1000}
 						height={1000}
@@ -89,7 +89,7 @@ const Testimonials = () => {
 					</div>
 				</div>
 
-				<p class="card__quote">
+				<p className="card__quote">
 					"The staff seem genuinely concerned about my progress which
 					I find really refreshing. The program gave me the confidence
 					necessary to be able to go out in the world and present
@@ -99,11 +99,11 @@ const Testimonials = () => {
 				</p>
 			</div>
 
-			<div class="card">
-				<div class="card__header">
+			<div className="card">
+				<div className="card__header">
 					<Image
 						src={"/image-kira.jpg"}
-						class="card__img"
+						className="card__img"
 						alt="Patrick Abrahms"
 						width={1000}
 						height={1000}
@@ -114,7 +114,7 @@ const Testimonials = () => {
 					</div>
 				</div>
 
-				<p class="card__quote">
+				<p className="card__quote">
 					"Before joining the bootcamp, I've never written a line of
 					code. I needed some structure from professionals who can
 					help me learn programming step by step. I was encouraged to
