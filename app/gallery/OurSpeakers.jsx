@@ -25,7 +25,9 @@ const OurSpeaker = () => {
 				slidesPerView={1}
 				spaceBetween={0}
 				navigation={true}
-				autoplay
+				autoplay={{
+					reverseDirection: true,
+				}}
 				loop={true}
 				grabCursor={true}
 				modules={[Navigation, Autoplay]}
