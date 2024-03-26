@@ -22,15 +22,17 @@
 			h4 {
 				text-transform: uppercase;
 			}
+
+			h5 {
+				color: $danger-color;
+				opacity: $opacity;
+			}
 			p {
 				margin-top: 0.5rem;
 				span {
 					display: block;
 					opacity: $opacity;
 				}
-			}
-
-			h5 {
 			}
 		}
 	}

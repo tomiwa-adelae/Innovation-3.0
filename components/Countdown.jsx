@@ -50,9 +50,7 @@ const Countdown = () => {
 
 			if (difference <= 0) {
 				clearInterval(updateTime);
-				setMessage(
-					"The day we've been waiting for is finally here! Happy holiday everyone!"
-				);
+				setMessage("It's world Innovation 3.0 day!!!");
 				setDays(0);
 				setHours(0);
 				setMinutes(0);
@@ -104,7 +102,7 @@ const Countdown = () => {
 				</div>
 			</div>
 			<Link href="/pre-register" className="btn btn-primary">
-				Pre-register for Innovation 3.0
+				{message ? message : "Pre-register for Innovation 3.0"}
 			</Link>
 		</div>
 	);
