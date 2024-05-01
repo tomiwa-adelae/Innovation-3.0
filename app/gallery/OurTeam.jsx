@@ -13,9 +13,19 @@ import { Navigation, Autoplay } from "swiper/modules";
 const OurTeam = () => {
 	const images = [
 		"/john-ogunjide-2.jpg",
-		"/elizabeth-samuel.jpg",
 		"/8.jpg",
-		"/john-ogunjide-3.jpg",
+		"/14.jpg",
+		"/7.jpg",
+		"/18.jpg",
+		"/19.jpg",
+		"/20.jpg",
+		"/folaji-ayomide.jpg",
+		"/ikhide-evelyn.jpg",
+		"/akagbosu-adesuwa.jpg",
+		"/adeleke-ifeoluwani.jpg",
+		"/susan-alabi.jpg",
+		"/tomiwa-adelae.jpg",
+		"/victor.jpg",
 	];
 
 	return (

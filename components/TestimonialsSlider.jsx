@@ -10,38 +10,9 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation, Autoplay } from "swiper/modules";
 
-const TestimonialSlider = () => {
-	const testimonials = [
-		{
-			imagePath: "/speaker-one.jpg",
-			name: "Joshua Icon",
-			testimony:
-				" Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolorem doloribus harum sint laboriosam repudiandae perferendis veniam eius saepe quo! Laboriosam, dignissimos eligendi accusamus aliquam optio officiis iure nemo sapiente eveniet molestiae rem saepe unde quaerat dolorem, vero voluptates sit soluta dolores error culpa aut? Delectus laboriosam laudantium iste eos!",
-			portfolio: "Founder of Google",
-		},
-		{
-			imagePath: "/speaker-one.jpg",
-			name: "Joshua Icon",
-			testimony:
-				" Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolorem doloribus harum sint laboriosam repudiandae perferendis veniam eius saepe quo! Laboriosam, dignissimos eligendi accusamus aliquam optio officiis iure nemo sapiente eveniet molestiae rem saepe unde quaerat dolorem, vero voluptates sit soluta dolores error culpa aut? Delectus laboriosam laudantium iste eos!",
-			portfolio: "Founder of Google",
-		},
-		{
-			imagePath: "/speaker-two.jpg",
-			name: "Donald Trump",
-			testimony:
-				" Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolorem doloribus harum sint laboriosam repudiandae perferendis veniam eius saepe quo! Laboriosam, dignissimos eligendi accusamus aliquam optio officiis iure nemo sapiente eveniet molestiae rem saepe unde quaerat dolorem, vero voluptates sit soluta dolores error culpa aut? Delectus laboriosam laudantium iste eos!",
-			portfolio: "Founder of Google",
-		},
-		{
-			imagePath: "/speaker-three.jpg",
-			name: "Barack Obama",
-			testimony:
-				" Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolorem doloribus harum sint laboriosam repudiandae perferendis veniam eius saepe quo! Laboriosam, dignissimos eligendi accusamus aliquam optio officiis iure nemo sapiente eveniet molestiae rem saepe unde quaerat dolorem, vero voluptates sit soluta dolores error culpa aut? Delectus laboriosam laudantium iste eos!",
-			portfolio: "Founder of Google",
-		},
-	];
+import { testimonials } from "../app/data/testimonials";
 
+const TestimonialSlider = () => {
 	return (
 		<Swiper
 			navigation={true}

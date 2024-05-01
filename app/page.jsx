@@ -1,4 +1,5 @@
 import Excerpt from "@/components/Excerpt";
+import Panelists from "@/components/Panelists";
 
 import PreRegister from "@/components/PreRegister";
 import Showcase from "@/components/Showcase";
@@ -12,6 +13,7 @@ export default function Home() {
 			<Showcase />
 			<WhyInnovation />
 			<Speakers />
+			<Panelists />
 			<Excerpt />
 			<PreRegister />
 			<Testimonials />

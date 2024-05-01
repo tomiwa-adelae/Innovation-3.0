@@ -6,6 +6,41 @@ import {
 } from "react-icons/io5";
 
 const Speakers = () => {
+	const speakers = [
+		{
+			imagePath: "/seye-olurotimi.jpg",
+			name: "Seye Olurotimi",
+			title: "Founder of MSME Africa",
+			facebook: "https://facebook.com/seyeolurotimi/",
+			twitter: "https://twitter.com/seyeolurotimi/",
+			instagram: "https://www.instagram.com/seyeolurotimi/",
+		},
+		{
+			imagePath: "/ibironke-yekinni.jpg",
+			name: "Ibironke Yekinni",
+			title: "",
+			facebook: "#",
+			twitter: "#",
+			instagram: "#",
+		},
+		{
+			imagePath: "/ashibogwu-victor.jpg",
+			name: "Ashibogwu Victor",
+			title: "CEO of Iphonepreneur",
+			facebook: "#",
+			twitter: "#",
+			instagram: "#",
+		},
+		{
+			imagePath: "/tejiri-gloria.jpg",
+			name: "Otomudo Tejiri",
+			title: "Brand Consultant",
+			facebook: "#",
+			twitter: "#",
+			instagram: "#",
+		},
+	];
+
 	return (
 		<div className="speakers-section">
 			<div className="container">
@@ -13,51 +48,41 @@ const Speakers = () => {
 					<h4>Innovation 3.0 Speakers</h4>
 				</div>
 				<div className="speakers">
-					<div className="speaker">
-						<Image
-							src={"/speaker-one.jpg"}
-							alt="Speaker One"
-							width={1000}
-							height={1000}
-						/>
-						<h4>John Doe</h4>
-						<p>Deputy & CEO of Apple</p>
-						<div className="socials">
-							<IoLogoInstagram className="instagram" />
-							<IoLogoFacebook className="facebook" />
-							<IoLogoTwitter className="twitter" />
+					{speakers.map((speaker, index) => (
+						<div key={index} className="speaker">
+							<Image
+								src={speaker.imagePath}
+								alt={speaker.name}
+								width={1000}
+								height={1000}
+							/>
+							<h4>{speaker.name}</h4>
+							<p>{speaker.title}</p>
+							<div className="socials">
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href={speaker.facebook}
+								>
+									<IoLogoFacebook className="facebook" />
+								</a>
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href={speaker.instagram}
+								>
+									<IoLogoInstagram className="instagram" />
+								</a>
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href={speaker.twitter}
+								>
+									<IoLogoTwitter className="twitter" />
+								</a>
+							</div>
 						</div>
-					</div>
-					<div className="speaker">
-						<Image
-							src={"/speaker-two.jpg"}
-							alt="Speaker One"
-							width={1000}
-							height={1000}
-						/>
-						<h4>John Doe</h4>
-						<p>Deputy & CEO of Apple</p>
-						<div className="socials">
-							<IoLogoInstagram className="instagram" />
-							<IoLogoFacebook className="facebook" />
-							<IoLogoTwitter className="twitter" />
-						</div>
-					</div>
-					<div className="speaker">
-						<Image
-							src={"/speaker-three.jpg"}
-							alt="Speaker Two"
-							width={1000}
-							height={1000}
-						/>
-						<h4>John Doe</h4>
-						<p>Deputy & CEO of Apple</p>
-						<div className="socials">
-							<IoLogoInstagram className="instagram" />
-							<IoLogoFacebook className="facebook" />
-							<IoLogoTwitter className="twitter" />
-						</div>
-					</div>
+					))}
 				</div>
 			</div>
 		</div>

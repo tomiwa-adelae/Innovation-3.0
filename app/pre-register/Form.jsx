@@ -2,17 +2,27 @@
 
 import { server } from "@/config/server";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Form = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [phoneNumber, setPhoneNumber] = useState("");
 	const [address, setAddress] = useState("");
+	const [institution, setInstitution] = useState("");
 	const [expectations, setExpectations] = useState("");
 	const [loading, setLoading] = useState(null);
 	const [success, setSuccess] = useState(null);
 	const [error, setError] = useState(null);
+
+	useEffect(() => {
+		// Hit backend to jumpstart the server and reduce time of spin-down
+		async function hitDB() {
+			await axios.get(`${server}/`);
+		}
+
+		hitDB();
+	}, []);
 
 	const submitHandler = async (e) => {
 		e.preventDefault();
@@ -28,7 +38,14 @@ const Form = () => {
 		try {
 			const res = await axios.post(
 				`${server}/api/register`,
-				{ name, email, phoneNumber, expectations, address },
+				{
+					name,
+					email,
+					phoneNumber,
+					expectations,
+					institution,
+					address,
+				},
 				config
 			);
 
@@ -85,6 +102,15 @@ const Form = () => {
 					type="text"
 					value={address}
 					onChange={(e) => setAddress(e.target.value)}
+				/>
+			</div>
+			<div>
+				<label htmlFor="institution">Institution</label>
+				<input
+					id="institution"
+					type="text"
+					value={institution}
+					onChange={(e) => setInstitution(e.target.value)}
 				/>
 			</div>
 			<div>

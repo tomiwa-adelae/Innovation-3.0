@@ -11,7 +11,9 @@ const montserrat = Montserrat({
 export const metadata = {
 	title: "Innovation 3.0",
 	description:
-		"An NGO whose aim is to educate young minds globally on issues ranging from leadership to current issues facing the world through holistic approach",
+		"CSIF is a non-profit organization with the soleaim of educating young minds all over the world on issues ranging from leadership to current issues facing the world through holistic approach and international career. The aim of CSIF is to let young people discover themselvesthrough the right education, understanding themeaning of leadership, ethics values",
+	keywords:
+		"Innovation, conferences, conference, cornerstone international foundation, foundation, bill gate foundations, alternative to gates foundations, gates foundations, ACU, Ajayi Crowther University",
 };
 
 export default function RootLayout({ children }) {

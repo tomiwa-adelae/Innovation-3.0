@@ -38,6 +38,11 @@
 				grid-gap: 1rem;
 			}
 		}
+		.panelist-section {
+			.panelists {
+				grid-gap: 1rem;
+			}
+		}
 	}
 
 	.aboutpage {
@@ -238,6 +243,23 @@
 				}
 			}
 		}
+		.panelist-section {
+			.panelists {
+				grid-gap: 1rem;
+				.panelist {
+					img {
+						width: 200px;
+						height: 200px;
+					}
+
+					.socials {
+						svg {
+							font-size: 1.5rem;
+						}
+					}
+				}
+			}
+		}
 
 		.excerpt-section {
 			.excerpts {
@@ -300,8 +322,16 @@
 		}
 		.speakers-section {
 			.speakers {
-				grid-template-columns: 1fr;
+				// grid-template-columns: 1fr;
 				.speaker {
+					margin: 1rem 0;
+				}
+			}
+		}
+		.panelist-section {
+			.panelists {
+				grid-template-columns: 1fr;
+				.panelist {
 					margin: 1rem 0;
 				}
 			}
@@ -449,6 +479,14 @@
 
 				.countdown-section {
 					width: 100%;
+				}
+			}
+		}
+		.speakers-section {
+			.speakers {
+				grid-template-columns: 1fr;
+				.speaker {
+					margin: 1rem 0;
 				}
 			}
 		}

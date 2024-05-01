@@ -37,13 +37,14 @@
 			border-radius: 100%;
 			border: 2px solid $primary-color;
 			margin-right: 1rem;
+			object-fit: cover;
 		}
 
 		.card__quote {
 			opacity: $opacity;
 		}
 
-		.card--bg-primary {
+		.card:nth-of-type(1) {
 			background: $primary-color;
 			color: $white-color;
 			background-image: url("../public/bg-pattern-quotation.svg");
@@ -51,12 +52,11 @@
 			background-position: top 10px right 100px;
 		}
 
-		.card--bg-light-blue {
+		.card:nth-of-type(2) {
 			background: $light-blue-color;
 			color: $black-color;
 		}
-
-		.card--bg-dark {
+		.card:nth-of-type(4) {
 			background: $dark-color;
 			color: $white-color;
 		}
