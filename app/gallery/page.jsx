@@ -5,7 +5,9 @@ import OurTeam from "./OurTeam";
 export const metadata = {
 	title: "Gallery | Innovation 3.0",
 	description:
-		"An NGO whose aim is to educate young minds globally on issues ranging from leadership to current issues facing the world through holistic approach",
+		"Gallery Innovation 3.0 - Innovation 3.0 - Dare to dream, innovate and explore our gallery.",
+	keywords:
+		"CSIF, Gallery, photos, photo, picture, Cornerstone, Cornerstone International Foundation, International Foundations, Foundations, John, Ogunjide, Contact Innovation 3.0, Innovation 3.0, Innovation, conferences, conference, cornerstone international foundation, foundation, bill gate foundations, alternative to gates foundations, gates foundations, ACU, Ajayi Crowther University, John Ogunjide",
 };
 
 const page = () => {

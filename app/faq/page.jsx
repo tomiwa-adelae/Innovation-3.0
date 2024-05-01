@@ -4,7 +4,9 @@ import Link from "next/link";
 export const metadata = {
 	title: "FAQs | Innovation 3.0",
 	description:
-		"An NGO whose aim is to educate young minds globally on issues ranging from leadership to current issues facing the world through holistic approach",
+		"Frequently asked questions, FAQs, Still have questions? Can't find the answers you are looking for. Please reach out to our friendly team. Innovation 3.0 - Our Mission - Our Vision - Our Team",
+	keywords:
+		"FAQ, Frequently asked question, FAQs Innovation, Innovation 3.0, Innovation 3.0, Innovation, conferences, conference, cornerstone international foundation, foundation, bill gate foundations, alternative to gates foundations, gates foundations, ACU, Ajayi Crowther University, John Ogunjide",
 };
 
 const page = () => {
