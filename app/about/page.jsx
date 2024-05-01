@@ -30,7 +30,7 @@ const page = () => {
 		{
 			name: "Ayelabowo wunmi",
 			position: "",
-			imagePath: "/user-icon.jpg",
+			imagePath: "/ayelabowo-wunmi.jpg",
 		},
 		{
 			name: "Anokwute Chidubem",
