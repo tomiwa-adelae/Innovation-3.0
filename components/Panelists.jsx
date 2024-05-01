@@ -10,7 +10,7 @@ const Panelists = () => {
 		{
 			imagePath: "/ibukunoluwa-taiwo.jpg",
 			name: "Ibukunoluwa Taiwo",
-			title: "Ajayi Crowther University Student Assembly President",
+			title: "ACUSA President 23/24",
 			facebook: "#",
 			twitter: "https://twitter.com/ibukunoluwa0100",
 			instagram: "https://www.instagram.com/ibukunoluwa0100/",
@@ -18,15 +18,15 @@ const Panelists = () => {
 		{
 			imagePath: "/richard-solomon.jpg",
 			name: "Amb. Richard Solomon",
-			title: "ECOWAS Youth Ambassador",
+			title: "Youth Ambassador, ECOWAS",
 			facebook: "#",
 			twitter: "https://twitter.com/RichardSW001",
 			instagram: "https://www.instagram.com/amb_richard.solomon/",
 		},
 		{
 			imagePath: "/samuel-tobiloba.jpg",
-			name: "Samuel Tobiloba",
-			title: "UI SUG President",
+			name: "Ayo Tobiloba",
+			title: "UI, SUG President 23/24",
 			facebook: "#",
 			twitter: "https://twitter.com/HOST_Dr",
 			instagram: "#",

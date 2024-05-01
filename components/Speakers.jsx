@@ -10,7 +10,7 @@ const Speakers = () => {
 		{
 			imagePath: "/seye-olurotimi.jpg",
 			name: "Seye Olurotimi",
-			title: "Founder of MSME Africa",
+			title: "Founder, MSME Africa",
 			facebook: "https://facebook.com/seyeolurotimi/",
 			twitter: "https://twitter.com/seyeolurotimi/",
 			instagram: "https://www.instagram.com/seyeolurotimi/",
@@ -18,7 +18,7 @@ const Speakers = () => {
 		{
 			imagePath: "/ibironke-yekinni.jpg",
 			name: "Ibironke Yekinni",
-			title: "",
+			title: "Software / Quality Assurance Engineer",
 			facebook: "#",
 			twitter: "#",
 			instagram: "#",
@@ -26,7 +26,7 @@ const Speakers = () => {
 		{
 			imagePath: "/ashibogwu-victor.jpg",
 			name: "Ashibogwu Victor",
-			title: "CEO of Iphonepreneur",
+			title: "CEO, Iphonepreneur",
 			facebook: "#",
 			twitter: "#",
 			instagram: "#",
@@ -34,7 +34,7 @@ const Speakers = () => {
 		{
 			imagePath: "/tejiri-gloria.jpg",
 			name: "Otomudo Tejiri",
-			title: "Brand Consultant",
+			title: "Social Media Management Expert",
 			facebook: "#",
 			twitter: "#",
 			instagram: "#",

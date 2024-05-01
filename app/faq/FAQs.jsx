@@ -7,6 +7,10 @@ const FAQs = () => {
 			answer: "Innovation 3.0 serves as a gathering at Ajayi Crowther University, fostering the development of both leaders and young minds. It provides a vibrant setting where youth can engage, cooperate, and draw inspiration from one another's experiences and ambitions.",
 		},
 		{
+			title: "What is the theme of the conference?",
+			answer: "Building for the Future.",
+		},
+		{
 			title: "Is Innovation 3.0 free?",
 			answer: "Innovation 3.0 is completely free. Join us to benefit from the wealth of knowledge and experience shared by seasoned professionals at no cost.",
 		},
@@ -14,10 +18,10 @@ const FAQs = () => {
 			title: "Where would Innovation 3.0 hold?",
 			answer: "Innovation 3.0 will take place at the Alakija Law Faculty Auditorium, located within Ajayi Crowther University. The conference will commence promptly at 9:00am.",
 		},
-		// {
-		// 	title: "What topics will be covered during Innovation 3.0?",
-		// 	answer: "Innovation 3.0 is packed with speakers who will speak on:  is the best thing that happened to mankind.",
-		// },
+		{
+			title: "What topics will be covered during Innovation 3.0?",
+			answer: "Technology, Business, Entrepreneurship, Social Media Management, Startups and Innovation, Leadership are the topics that would be treated at Innovation 3.0 on the 17th of May, 2024.",
+		},
 		{
 			title: "Will there be opportunities for networking?",
 			answer: "Networking is an integral part of Innovation 3.0, enhancing the conference experience. An allocated time will be provided for attendees to network with both speakers and fellow individuals. We encourage all participants to take advantage of this opportunity!",
