@@ -124,7 +124,7 @@ const page = () => {
 				<div className="line"></div>
 				<div className="our-mission">
 					<Image
-						src={"/2.jpg"}
+						src={"/22.jpg"}
 						alt="John Ogunjide"
 						height={1000}
 						width={1000}
@@ -200,7 +200,7 @@ const page = () => {
 						</p>
 					</div>
 					<Image
-						src={"/13.jpg"}
+						src={"/21.jpg"}
 						alt="John Ogunjide"
 						height={1000}
 						width={1000}
