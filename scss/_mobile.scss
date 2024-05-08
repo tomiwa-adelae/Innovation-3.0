@@ -176,6 +176,7 @@
 	.faqpage,
 	.gallerypage,
 	.pre-registerpage,
+	.challengepage,
 	.testimonialspage,
 	.cornerstone-foundationpage {
 		margin-top: 100px;
@@ -303,6 +304,12 @@
 			grid-template-columns: 1fr 1fr;
 		}
 	}
+
+	.challengepage {
+		.container {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
 }
 
 @media (max-width: 780px) {
@@ -373,6 +380,13 @@
 	}
 
 	.pre-registerpage {
+		padding-top: 3rem;
+		.container {
+			height: 100%;
+			grid-template-columns: 1fr;
+		}
+	}
+	.challengepage {
 		padding-top: 3rem;
 		.container {
 			height: 100%;

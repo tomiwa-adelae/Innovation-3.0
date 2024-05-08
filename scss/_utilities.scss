@@ -131,7 +131,8 @@ form {
 			opacity: $opacity;
 		}
 		input,
-		textarea {
+		textarea,
+		select {
 			font-family: "__Montserrat_588e4d", "__Montserrat_Fallback_588e4d";
 			border: none;
 			border-bottom: 2px solid $white-color;
@@ -150,6 +151,10 @@ form {
 
 		input[type="number"] {
 			-moz-appearance: textfield;
+		}
+
+		option {
+			color: $black-color;
 		}
 	}
 }

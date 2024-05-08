@@ -1,0 +1,39 @@
+.challengepage {
+	background-image: url("../public/challenge-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	height: 100%;
+
+	.container {
+		color: $white-color;
+		height: 100vh;
+		display: grid;
+		grid-template-columns: 3fr 2fr;
+		gap: 1rem;
+		align-items: center;
+
+		h2 {
+			text-transform: uppercase;
+		}
+
+		form {
+			h4 {
+				text-transform: uppercase;
+			}
+
+			h5 {
+				color: $danger-color;
+				opacity: $opacity;
+			}
+			p {
+				margin-top: 0.5rem;
+				span {
+					display: block;
+					opacity: $opacity;
+				}
+			}
+		}
+	}
+}
