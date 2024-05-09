@@ -114,7 +114,7 @@ const Form = () => {
 				>
 					<option value="">Select challenge category</option>
 					<option value="Entrepreneurship">Entrepreneurship</option>
-					<option value="Tech">Tech</option>
+					<option value="Technology">Technology</option>
 					<option value="Social Media">Social media</option>
 				</select>
 			</div>
