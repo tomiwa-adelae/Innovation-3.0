@@ -178,7 +178,8 @@
 	.pre-registerpage,
 	.challengepage,
 	.testimonialspage,
-	.cornerstone-foundationpage {
+	.cornerstone-foundationpage,
+	.attendeespage {
 		margin-top: 100px;
 	}
 
@@ -308,6 +309,12 @@
 	.challengepage {
 		.container {
 			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	.attendeespage {
+		.attendees {
+			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 }
@@ -503,6 +510,12 @@
 					margin: 1rem 0;
 				}
 			}
+		}
+	}
+
+	.attendeespage {
+		.attendees {
+			grid-template-columns: repeat(1, 1fr);
 		}
 	}
 }

@@ -1,0 +1,75 @@
+.attendeespage {
+	padding: 5rem 0;
+	@include linearLightBlueBackground();
+	height: 100%;
+
+	.head {
+		text-align: center;
+	}
+
+	.search-form {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		div {
+			label {
+				color: $primary-color;
+				opacity: $opacity;
+			}
+			input,
+			textarea,
+			select {
+				border-bottom: 2px solid $primary-color;
+				color: $black-color;
+			}
+		}
+	}
+
+	.login-form {
+		div {
+			label {
+				color: $primary-color;
+				opacity: $opacity;
+			}
+			input,
+			textarea,
+			select {
+				border-bottom: 2px solid $primary-color;
+				color: $black-color;
+			}
+		}
+	}
+
+	.attendees {
+		margin: 2rem 0;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+
+		.attendee {
+			background-color: $grey-color;
+			color: $black-color;
+			padding: 1.5rem;
+			border-radius: $radius;
+			box-shadow: $shadow;
+
+			h6 {
+				margin: 1rem 0;
+
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+
+			.btn {
+				width: 100%;
+			}
+		}
+
+		.attendee.marked {
+			background: darken($grey-color, 10%);
+			opacity: $opacity;
+			cursor: not-allowed;
+		}
+	}
+}

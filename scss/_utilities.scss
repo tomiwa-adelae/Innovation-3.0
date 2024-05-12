@@ -115,6 +115,24 @@ h6 {
 		}
 	}
 
+	&-primary-outline {
+		border: 2px solid $primary-color;
+		border-radius: 100px;
+		background: transparent;
+		color: $primary-color;
+
+		&:hover {
+			background-color: $primary-color;
+			color: $white-color;
+		}
+	}
+
+	&-small {
+		font-size: 0.6rem;
+
+		padding: 0.7rem 1.2rem;
+	}
+
 	&:disabled {
 		opacity: $opacity;
 		cursor: not-allowed;
@@ -186,6 +204,39 @@ form {
 	margin-bottom: 10px;
 }
 .loader:after {
+	animation: ball2 1s infinite;
+	background-color: #00a096;
+	box-shadow: 30px 0 0 #97bf0d;
+}
+
+.loader-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 200px;
+}
+
+.loader-xl {
+	animation: rotate 1s infinite;
+	height: 30px;
+	width: 30px;
+	cursor: not-allowed;
+}
+.loader-xl:before,
+.loader-xl:after {
+	border-radius: 50%;
+	content: "";
+	display: block;
+	height: 30px;
+	width: 30px;
+}
+.loader-xl:before {
+	animation: ball1 1s infinite;
+	background-color: #cb2025;
+	box-shadow: 30px 0 0 #f8b334;
+	margin-bottom: 30px;
+}
+.loader-xl:after {
 	animation: ball2 1s infinite;
 	background-color: #00a096;
 	box-shadow: 30px 0 0 #97bf0d;
