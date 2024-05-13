@@ -4,7 +4,7 @@ import { server } from "@/config/server";
 import axios from "axios";
 import { useState } from "react";
 
-const Attendee = ({ attendee }) => {
+const Challenger = ({ challenger }) => {
 	const [error, setError] = useState(null);
 	const [success, setSuccess] = useState(null);
 	const [loading, setLoading] = useState(null);
@@ -15,7 +15,7 @@ const Attendee = ({ attendee }) => {
 		setError(null);
 		setLoading(true);
 
-		const id = attendee._id;
+		const id = challenger._id;
 
 		const config = {
 			headers: {
@@ -25,7 +25,7 @@ const Attendee = ({ attendee }) => {
 
 		try {
 			const res = await axios.post(
-				`${server}/api/register/mark-attended`,
+				`${server}/api/challenge/mark-challenged`,
 				{ id },
 				config
 			);
@@ -43,16 +43,20 @@ const Attendee = ({ attendee }) => {
 	return (
 		<div
 			className={
-				attendee.markAttendance || success
-					? "attendee marked"
-					: "attendee"
+				challenger.markChallenged || success
+					? "challenger marked"
+					: "challenger"
 			}
 		>
-			<h6>Name: {attendee.name}</h6>
+			<h6>Name: {challenger.name}</h6>
 			<div className="line"></div>
-			<h6>Email: {attendee.email || <i>No email address</i>}</h6>
+			<h6>Email: {challenger.email || <i>No email address</i>}</h6>
+			<div className="line"></div>
+			<h6>Challenge category: {challenger.category}</h6>
+			<div className="line"></div>
+			<h6>Presentation type: {challenger.presentationType}</h6>
 			<button
-				disabled={success || attendee.markAttendance}
+				disabled={success || challenger.markChallenged}
 				onClick={markAsAttended}
 				className="btn btn-primary-outline btn-small"
 			>
@@ -60,10 +64,10 @@ const Attendee = ({ attendee }) => {
 					<div className="loader"></div>
 				) : success ? (
 					`${success}`
-				) : attendee.markAttendance ? (
-					"Attendance marked!"
+				) : challenger.markChallenged ? (
+					"Challenged!"
 				) : (
-					"Mark as attend"
+					"Mark as challenge"
 				)}
 			</button>
 			<h5>{error && error}</h5>
@@ -71,4 +75,4 @@ const Attendee = ({ attendee }) => {
 	);
 };
 
-export default Attendee;
+export default Challenger;

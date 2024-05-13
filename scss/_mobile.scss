@@ -179,7 +179,8 @@
 	.challengepage,
 	.testimonialspage,
 	.cornerstone-foundationpage,
-	.attendeespage {
+	.attendeespage,
+	.challengerspage {
 		margin-top: 100px;
 	}
 
@@ -314,6 +315,12 @@
 
 	.attendeespage {
 		.attendees {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.challengerspage {
+		.challengers {
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}
@@ -515,6 +522,12 @@
 
 	.attendeespage {
 		.attendees {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	.challengerspage {
+		.challengers {
 			grid-template-columns: repeat(1, 1fr);
 		}
 	}
