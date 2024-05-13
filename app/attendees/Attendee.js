@@ -51,7 +51,7 @@ const Attendee = ({ attendee }) => {
 		>
 			<h6>Name: {attendee.name}</h6>
 			<div className="line"></div>
-			<h6>Email: {attendee.email}</h6>
+			<h6>Email: {attendee.email || <i>No email address</i>}</h6>
 			<button
 				disabled={success || attendee.markAttendance}
 				onClick={markAsAttended}

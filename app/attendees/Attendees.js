@@ -4,6 +4,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Attendee from "./Attendee";
 import Login from "./Login";
+import RegisterModal from "./RegisterModal";
 
 const Attendees = () => {
 	const [attendees, setAttendees] = useState([]);
@@ -13,6 +14,7 @@ const Attendees = () => {
 	const [loadingAttendees, setLoadingAttendees] = useState(null);
 	const [success, setSuccess] = useState(null);
 	const [error, setError] = useState(null);
+	const [openModal, setOpenModal] = useState(false);
 
 	const [openForm, setOpenForm] = useState(false);
 
@@ -36,7 +38,7 @@ const Attendees = () => {
 		if (!search) {
 			fetchAttendees();
 		}
-	}, [search]);
+	}, [search, openModal]);
 
 	const submitHandler = async (e) => {
 		e.preventDefault();
@@ -98,9 +100,24 @@ const Attendees = () => {
 						</button>
 					</form>
 
-					<h5 style={{ marginTop: "1rem" }}>
+					<h5 style={{ margin: "1rem 0rem" }}>
 						Total number of registered attendees: {attendees.length}
 					</h5>
+
+					<div className="register-attendees">
+						<h5>Are there new attendees? Register them here</h5>
+						<button
+							onClick={() => setOpenModal(!openModal)}
+							className="btn btn-primary"
+						>
+							Register
+						</button>
+					</div>
+					{openModal && (
+						<RegisterModal
+							closeModal={() => setOpenModal(!openForm)}
+						/>
+					)}
 
 					{loadingAttendees ? (
 						<div className="loader-wrapper">

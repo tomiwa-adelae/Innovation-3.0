@@ -127,6 +127,18 @@ h6 {
 		}
 	}
 
+	&-grey-outline {
+		border: 2px solid $grey-color;
+		border-radius: 100px;
+		background: transparent;
+		color: $black-color;
+
+		&:hover {
+			background-color: $black-color;
+			color: $white-color;
+		}
+	}
+
 	&-small {
 		font-size: 0.6rem;
 

@@ -72,4 +72,49 @@
 			cursor: not-allowed;
 		}
 	}
+
+	.register-attendees {
+		background-color: $white-color;
+		color: $black-color;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 2rem;
+		border-radius: $radius;
+	}
+
+	.register-modal {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: rgba($primary-color, 0.6);
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 2;
+		form {
+			background-color: $white-color;
+			padding: 2rem;
+			border-radius: $radius;
+			min-width: 900px;
+			box-shadow: $shadow;
+
+			div {
+				label {
+					color: $primary-color;
+					opacity: $opacity;
+				}
+				input,
+				textarea,
+				select {
+					border-bottom: 2px solid $primary-color;
+					color: $black-color;
+				}
+			}
+		}
+	}
 }
