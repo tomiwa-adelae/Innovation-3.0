@@ -18,6 +18,11 @@ const page = () => {
 			imagePath: "/john-ogunjide-2.jpg",
 		},
 		{
+			name: "Faleye Gift",
+			position: "Female host",
+			imagePath: "/faleye-gift.jpg",
+		},
+		{
 			name: "Faluyi Peter",
 			position: "Male host",
 			imagePath: "/faluyi-peter.jpg",
