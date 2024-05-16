@@ -112,7 +112,7 @@ const Challengers = () => {
 				</button>
 			</div>
 			{openModal && (
-				<RegisterModal closeModal={() => setOpenModal(!openForm)} />
+				<RegisterModal closeModal={() => setOpenModal(!openModal)} />
 			)}
 
 			{loadingChallengers ? (
