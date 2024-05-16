@@ -69,72 +69,64 @@ const Attendees = () => {
 
 	return (
 		<div className="attendees-wrapper">
-			{!openForm ? (
+			{/* {!openForm ? (
 				<Login openFormHandler={() => setOpenForm(true)} />
 			) : (
-				<>
-					<form className="search-form" onSubmit={submitHandler}>
-						<div className="search-input">
-							<label htmlFor="search">Search</label>
-							<input
-								id="search"
-								type="text"
-								value={search}
-								onChange={(e) => setSearch(e.target.value)}
-							/>
-						</div>
+				<> */}
+			<form className="search-form" onSubmit={submitHandler}>
+				<div className="search-input">
+					<label htmlFor="search">Search</label>
+					<input
+						id="search"
+						type="text"
+						value={search}
+						onChange={(e) => setSearch(e.target.value)}
+					/>
+				</div>
 
-						<h5>{error && error}</h5>
+				<h5>{error && error}</h5>
 
-						<button
-							disabled={success}
-							className="btn btn-primary-outline"
-						>
-							{loading ? (
-								<div className="loader"></div>
-							) : success ? (
-								`${success}`
-							) : (
-								"Search"
-							)}
-						</button>
-					</form>
-
-					<h5 style={{ margin: "1rem 0rem" }}>
-						Total number of registered attendees: {attendees.length}
-					</h5>
-
-					<div className="register-attendees">
-						<h5>Are there new attendees? Register them here</h5>
-						<button
-							onClick={() => setOpenModal(!openModal)}
-							className="btn btn-primary"
-						>
-							Register
-						</button>
-					</div>
-					{openModal && (
-						<RegisterModal
-							closeModal={() => setOpenModal(!openForm)}
-						/>
-					)}
-
-					{loadingAttendees ? (
-						<div className="loader-wrapper">
-							<div className="loader-xl"></div>
-						</div>
+				<button disabled={success} className="btn btn-primary-outline">
+					{loading ? (
+						<div className="loader"></div>
+					) : success ? (
+						`${success}`
 					) : (
-						<div className="attendees">
-							{attendees.map((attendee) => (
-								<Attendee
-									key={attendee._id}
-									attendee={attendee}
-								/>
-							))}
-						</div>
+						"Search"
 					)}
-				</>
+				</button>
+			</form>
+
+			<h5 style={{ margin: "1rem 0rem" }}>
+				Total number of registered attendees: {attendees.length}
+			</h5>
+
+			<div className="register-attendees">
+				<h5>Are there new attendees? Register them here</h5>
+				<button
+					onClick={() => setOpenModal(!openModal)}
+					className="btn btn-primary"
+				>
+					Register
+				</button>
+			</div>
+			{openModal && (
+				<RegisterModal closeModal={() => setOpenModal(!openForm)} />
 			)}
+
+			{loadingAttendees ? (
+				<div className="loader-wrapper">
+					<div className="loader-xl"></div>
+				</div>
+			) : (
+				<div className="attendees">
+					{attendees.map((attendee) => (
+						<Attendee key={attendee._id} attendee={attendee} />
+					))}
+				</div>
+			)}
+			{/* </>
+			)} */}
 		</div>
 	);
 };
