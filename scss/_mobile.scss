@@ -524,11 +524,23 @@
 		.attendees {
 			grid-template-columns: repeat(1, 1fr);
 		}
+
+		.register-modal {
+			form {
+				min-width: 0;
+			}
+		}
 	}
 
 	.challengerspage {
 		.challengers {
 			grid-template-columns: repeat(1, 1fr);
+		}
+
+		.register-modal {
+			form {
+				min-width: 0;
+			}
 		}
 	}
 }
