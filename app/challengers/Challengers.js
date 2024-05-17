@@ -69,68 +69,73 @@ const Challengers = () => {
 
 	return (
 		<div className="challengers-wrapper">
-			{/* {
-			!openForm ? (
+			{!openForm ? (
 				<Login openFormHandler={() => setOpenForm(true)} />
 			) : (
-				<> */}
-			<form className="search-form" onSubmit={submitHandler}>
-				<div className="search-input">
-					<label htmlFor="search">Search</label>
-					<input
-						id="search"
-						type="text"
-						value={search}
-						onChange={(e) => setSearch(e.target.value)}
-					/>
-				</div>
+				<>
+					<form className="search-form" onSubmit={submitHandler}>
+						<div className="search-input">
+							<label htmlFor="search">Search</label>
+							<input
+								id="search"
+								type="text"
+								value={search}
+								onChange={(e) => setSearch(e.target.value)}
+							/>
+						</div>
 
-				<h5>{error && error}</h5>
+						<h5>{error && error}</h5>
 
-				<button disabled={success} className="btn btn-primary-outline">
-					{loading ? (
-						<div className="loader"></div>
-					) : success ? (
-						`${success}`
-					) : (
-						"Search"
-					)}
-				</button>
-			</form>
+						<button
+							disabled={success}
+							className="btn btn-primary-outline"
+						>
+							{loading ? (
+								<div className="loader"></div>
+							) : success ? (
+								`${success}`
+							) : (
+								"Search"
+							)}
+						</button>
+					</form>
 
-			<h5 style={{ margin: "1rem 0rem" }}>
-				Total number of registered challengers: {challengers.length}
-			</h5>
+					<h5 style={{ margin: "1rem 0rem" }}>
+						Total number of registered challengers:{" "}
+						{challengers.length}
+					</h5>
 
-			<div className="register-challengers">
-				<h5>Are there new challengers? Register them here</h5>
-				<button
-					onClick={() => setOpenModal(!openModal)}
-					className="btn btn-primary"
-				>
-					Register
-				</button>
-			</div>
-			{openModal && (
-				<RegisterModal closeModal={() => setOpenModal(!openModal)} />
-			)}
-
-			{loadingChallengers ? (
-				<div className="loader-wrapper">
-					<div className="loader-xl"></div>
-				</div>
-			) : (
-				<div className="challengers">
-					{challengers.map((challenger) => (
-						<Challenger
-							key={challenger._id}
-							challenger={challenger}
+					<div className="register-challengers">
+						<h5>Are there new challengers? Register them here</h5>
+						<button
+							onClick={() => setOpenModal(!openModal)}
+							className="btn btn-primary"
+						>
+							Register
+						</button>
+					</div>
+					{openModal && (
+						<RegisterModal
+							closeModal={() => setOpenModal(!openModal)}
 						/>
-					))}
-				</div>
+					)}
+
+					{loadingChallengers ? (
+						<div className="loader-wrapper">
+							<div className="loader-xl"></div>
+						</div>
+					) : (
+						<div className="challengers">
+							{challengers.map((challenger) => (
+								<Challenger
+									key={challenger._id}
+									challenger={challenger}
+								/>
+							))}
+						</div>
+					)}
+				</>
 			)}
-			{/* </>
-			)} */}
 		</div>
 	);
 };

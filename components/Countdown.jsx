@@ -101,10 +101,14 @@ const Countdown = () => {
 					<div></div>
 				</div>
 			</div>
-			<Link href="/pre-register" className="btn btn-primary">
+			<button
+				disabled
+				// href="/pre-register"
+				className="btn btn-primary"
+			>
 				{/* {message ? message : "Register for Innovation 3.0"} */}
-				Register for Innovation 3.0😊
-			</Link>
+				Innovation 3.0 is over😊
+			</button>
 		</div>
 	);
 };
