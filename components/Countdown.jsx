@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Countdown = () => {
-	const launchDate = new Date("May 17, 2024, 09:00:00").getTime();
+	const launchDate = new Date("May 17, 2024, 11:00:00").getTime();
 
 	const [days, setDays] = useState(0);
 	const [hours, setHours] = useState(0);
@@ -102,7 +102,8 @@ const Countdown = () => {
 				</div>
 			</div>
 			<Link href="/pre-register" className="btn btn-primary">
-				{message ? message : "Pre-register for Innovation 3.0"}
+				{/* {message ? message : "Register for Innovation 3.0"} */}
+				Register for Innovation 3.0😊
 			</Link>
 		</div>
 	);
