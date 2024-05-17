@@ -16,7 +16,7 @@ const FAQs = () => {
 		},
 		{
 			title: "Where would Innovation 3.0 hold?",
-			answer: "Innovation 3.0 will take place at the Alakija Law Faculty Auditorium, located within Ajayi Crowther University. The conference will commence promptly at 9:00am.",
+			answer: "Innovation 3.0 will take place at the Alakija Law Faculty Auditorium, located within Ajayi Crowther University. The conference will commence promptly at 10:00am.",
 		},
 		{
 			title: "What topics will be covered during Innovation 3.0?",
