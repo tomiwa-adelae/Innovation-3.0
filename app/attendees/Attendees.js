@@ -16,7 +16,7 @@ const Attendees = () => {
 	const [error, setError] = useState(null);
 	const [openModal, setOpenModal] = useState(false);
 
-	const [openForm, setOpenForm] = useState(false);
+	const [openForm, setOpenForm] = useState(true);
 
 	useEffect(() => {
 		async function fetchAttendees() {
